@@ -91,7 +91,7 @@ const HeroSection = () => {
 
     {/* ML — bottom left */}
     <div
-      className="absolute bottom-8 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
+      className="absolute bottom-12 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-2xl font-bold text-foreground">ML</span>
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     {/* LLM — bottom right */}
     <div
-      className="absolute bottom-1 right-10 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
+      className="absolute bottom+6 right-15 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
       style={{ animationDelay: "2.5s" }}
     >
       <span className="font-display text-xl font-bold text-foreground">LLM</span>
