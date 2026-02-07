@@ -33,9 +33,7 @@ const HeroSection = () => {
               className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6"
             >
               The{" "}
-              <span className="text-gradient">Mis.fit</span>
-              <br />
-              Data Scientist
+              <span className="text-gradient">Data Skeptic</span>            
             </motion.h1>
 
             <motion.p
@@ -44,7 +42,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg text-muted-foreground max-w-lg mb-8 font-body"
             >
-              I build in the gap between ambiguous business problems and production systems that drive decisions. 4+ years shipping ML and LLM solutions—from credit models serving millions at Amazon to analytics pipelines processing thousands of narratives weekly.
+              I'm Nishtha. I stumbled into data science and discovered I'm weirdly good at the parts most people hate: messy data, unclear requirements, and stakeholders who don't know what they need. I question the problem before picking an algorithm—and that's how I get systems to actually ship to production.
             </motion.p>
 
             <motion.div

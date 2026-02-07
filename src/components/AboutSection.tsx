@@ -37,13 +37,15 @@ const AboutSection = () => {
             className="space-y-4 text-muted-foreground font-body leading-relaxed"
           >
             <p>
-              I'm a Senior Data Scientist with 4+ years building end-to-end ML systems from scoping business problems to deploying models that serve production traffic. I work across experimentation, predictive modeling, and LLM applications, handling everything from feature engineering to model monitoring.
+              I'm a <b>Senior Data Scientist with 4+ years</b> building production ML systems—from messy, ambiguous problems to deployed solutions driving real decisions. My experience spans <b>credit risk modeling, LLM pipelines, and experimentation</b>, working across the full lifecycle from feature engineering to monitoring systems at scale.
             </p>
+
             <p>
-                My experience includes credit risk modeling at Amazon (gradient boosting models serving millions of daily decisions on AWS), analytics and LLM pipelines at ASU (Azure OpenAI and GCP-based systems processing thousands of records weekly), and A/B testing frameworks that drove measurable engagement improvements. I've worked with messy real-world data, tight latency requirements, and cross-functional stakeholders across Product, Engineering, and Business teams.
+              My approach? <b>Question the defaults. Challenge assumptions. Find the signal everyone else overlooks.</b> I don't accept the first problem framing or jump straight to algorithms. I validate with data, optimize for production (not just notebooks), and build systems designed to survive the real world—messy data, shifting requirements, and all.
             </p>
+
             <p>
-              What distinguishes my approach: I validate assumptions before building, I optimize for production performance over notebook accuracy, and I focus on systems that inform actual business decisions. I thrive in ambiguous problem spaces where the requirements aren't clear and the path to impact requires both technical depth and business judgment.
+              At <b>Amazon</b>, I built credit risk models on <b>AWS serving 500K+ daily decisions</b> and optimized pipelines that cut runtime by <b>95%</b>. At <b>ASU</b>, I'm deploying <b>LLM systems on GCP processing 20K+ weekly</b> and running A/B tests that <b>improved engagement by 7%</b>. When I'm not shipping models, you'll find me writing about data science, mentoring aspiring analysts, or figuring out which ML research actually matters for production.
             </p>
           </motion.div>
 
