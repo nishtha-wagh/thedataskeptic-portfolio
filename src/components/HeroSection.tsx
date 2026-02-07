@@ -70,49 +70,62 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="hidden md:flex justify-center items-center"
-          >
-            {/* Fixed stage so absolute positioning is stable across screen sizes */}
-            <div className="relative w-[420px] h-[420px]">
-              {/* Centered anchor */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
-              </div>
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, delay: 0.3 }}
+  className="hidden md:flex justify-center"
+>
+  <div className="relative">
+    {/* Main anchor */}
+    <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
 
-              {/* 4+ yrs (top-right quadrant) */}
-              <div className="absolute top-[14%] right-[16%] w-28 h-28 rounded-2xl bg-mint-light border border-border flex items-center justify-center">
-                <span className="font-display text-2xl font-bold text-foreground">4+</span>
-                <span className="text-xs text-muted-foreground ml-1">yrs</span>
-              </div>
+    {/* 4+ yrs — top right (primary) */}
+    <div
+      className="absolute -top-6 right-6 w-32 h-32 rounded-2xl bg-mint-light border border-border flex items-center justify-center animate-float"
+      style={{ animationDelay: "1s" }}
+    >
+      <span className="font-display text-3xl font-bold text-foreground">4+</span>
+      <span className="text-xs text-muted-foreground ml-1">yrs</span>
+    </div>
 
-              {/* AWS · GCP (top-left quadrant) */}
-              <div className="absolute top-[18%] left-[10%] w-36 h-20 rounded-2xl bg-cream border border-border flex items-center justify-center">
-                <span className="font-display text-sm font-semibold text-foreground">AWS · GCP</span>
-              </div>
+    {/* ML — bottom left */}
+    <div
+      className="absolute bottom-2 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
+      style={{ animationDelay: "2s" }}
+    >
+      <span className="font-display text-2xl font-bold text-foreground">ML</span>
+    </div>
 
-              {/* ML (bottom-left quadrant) */}
-              <div className="absolute bottom-[16%] left-[18%] w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center">
-                <span className="font-display text-xl font-bold text-foreground">ML</span>
-              </div>
+    {/* LLM — bottom right */}
+    <div
+      className="absolute bottom-4 right-2 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
+      style={{ animationDelay: "2.5s" }}
+    >
+      <span className="font-display text-xl font-bold text-foreground">LLM</span>
+    </div>
 
-              {/* LLM (bottom-right quadrant) */}
-              <div className="absolute bottom-[18%] right-[18%] w-32 h-20 rounded-2xl bg-peach-light border border-border flex items-center justify-center">
-                <span className="font-display text-sm font-semibold text-foreground">LLM</span>
-              </div>
+    {/* AWS · GCP — top left */}
+    <div
+      className="absolute -top-4 -left-4 w-36 h-24 rounded-2xl bg-cream border border-border flex items-center justify-center animate-float"
+      style={{ animationDelay: "3s" }}
+    >
+      <span className="font-display text-sm font-semibold text-foreground">
+        AWS · GCP
+      </span>
+    </div>
 
-              {/* PRODUCTION (bottom center) */}
-              <div className="absolute bottom-[6%] left-1/2 -translate-x-1/2 w-64 h-16 rounded-2xl bg-coral-light border border-border flex items-center justify-center">
-                <span className="font-display text-sm font-bold text-foreground">PRODUCTION</span>
-              </div>
-            </div>
-          </motion.div>
-
-
+    {/* PROD — center right (small, supporting) */}
+    <div
+      className="absolute top-1/2 right-[-2.5rem] w-24 h-24 rounded-2xl bg-coral-light border border-border flex items-center justify-center animate-float"
+      style={{ animationDelay: "3.5s" }}
+    >
+      <span className="font-display text-sm font-bold text-foreground">
+        PROD
+      </span>
+    </div>
+  </div>
+</motion.div>
 
         </div>
       </div>
