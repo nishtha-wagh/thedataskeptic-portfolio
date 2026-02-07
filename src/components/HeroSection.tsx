@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     {/* LLM — bottom right */}
     <div
-      className="absolute bottom-1 right-13 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
+      className="absolute bottom-1 right-9 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
       style={{ animationDelay: "2.5s" }}
     >
       <span className="font-display text-xl font-bold text-foreground">LLM</span>
