@@ -6,6 +6,8 @@ const projects = [
     title: "ChurnGuard ML",
     description:
       "End-to-end customer churn prediction system using XGBoost and SHAP explainability. Interactive Streamlit app with real-time inference and business impact analysis.",
+    github: "https://github.com/nishtha-wagh/churnguard-ml",
+    live: "https://churnguard-ml.streamlit.app/",
     tags: ["XGBoost", "SHAP", "Streamlit", "Python"],
     color: "bg-coral-light",
     accent: "text-coral",
@@ -67,13 +69,30 @@ const ProjectsSection = () => {
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-display text-xl font-bold">{project.title}</h3>
                 <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button className="p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors"
+                    aria-label="View GitHub repository"
+                  >
                     <Github size={16} />
-                  </button>
-                  <button className="p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors">
+                  </a>
+                )}
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors"
+                    aria-label="View live project"
+                  >
                     <ExternalLink size={16} />
-                  </button>
-                </div>
+                  </a>
+                )}
+              </div>
               </div>
               <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
                 {project.description}
