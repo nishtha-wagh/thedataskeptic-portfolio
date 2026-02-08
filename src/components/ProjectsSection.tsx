@@ -5,8 +5,8 @@ const projects = [
   {
     title: "ChurnGuard ML",
     description:
-      "End-to-end customer churn prediction pipeline using XGBoost and SHAP explanations. Deployed on AWS with real-time scoring API.",
-    tags: ["XGBoost", "SHAP", "FastAPI", "AWS"],
+      "End-to-end customer churn prediction system using XGBoost and SHAP explainability. Interactive Streamlit app with real-time inference and business impact analysis.",
+    tags: ["XGBoost", "SHAP", "Streamlit", "Python"],
     color: "bg-coral-light",
     accent: "text-coral",
   },
