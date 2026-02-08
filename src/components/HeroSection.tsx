@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     {/* 4+ Years in Production — center right */}
     <div
-      className="absolute top-1/2 -translate-y-1/2 right-[50px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
+      className="absolute top-1/2 -translate-y-1/2 right-[100px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
@@ -109,7 +109,7 @@ const HeroSection = () => {
 
     {/* LLM · Credit Risk — bottom right */}
     <div
-      className="absolute bottom-[20px] right-[50px] px-4 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
+      className="absolute bottom-[50px] right-[50px] px-4 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
       style={{ animationDelay: "2.6s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-[30px] left-[50px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute bottom-[60px] left-[50px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
