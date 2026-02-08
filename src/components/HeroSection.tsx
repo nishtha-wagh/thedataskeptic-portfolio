@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-[100px] left-[85px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute bottom-[120px] left-[85px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
