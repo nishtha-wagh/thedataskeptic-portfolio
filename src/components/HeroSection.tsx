@@ -89,7 +89,7 @@ const HeroSection = () => {
 
     {/* Product Experimentation — top right */}
     <div
-      className="absolute top-[85px] right-[50px] px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
+      className="absolute top-[85px] right-[65px] px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
       style={{ animationDelay: "1.4s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-[80px] left-[70px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute bottom-[100px] left-[85px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
