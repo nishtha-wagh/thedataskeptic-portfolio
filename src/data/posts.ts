@@ -19,61 +19,60 @@ export const posts: BlogPost[] = [
     readTime: "6 min read",
     excerpt:
       "Everyone’s obsessed with bigger datasets. But in production, real gains often come from better features, constraints, and problem framing.",
-    content: `
-    ## The Data Hoarding Problem
+    content: `## The Data Hoarding Problem
 
-    We've all been there. Your model’s accuracy plateaus at 87%, and the first instinct is always the same: *"We need more data."*
+        We've all been there. Your model’s accuracy plateaus at 87%, and the first instinct is always the same: *"We need more data."*
 
-    But here's the uncomfortable truth — **more data is rarely the answer**.
+        But here's the uncomfortable truth — **more data is rarely the answer**.
 
-    ---
+        ---
 
-    ## The Feature Engineering Goldmine
+        ## The Feature Engineering Goldmine
 
-    Let me share a real example.
+        Let me share a real example.
 
-    We had a churn model stuck at **82% accuracy** with 500K records. Instead of scraping more users, we engineered better features:
+        We had a churn model stuck at **82% accuracy** with 500K records. Instead of scraping more users, we engineered better features:
 
-    - **Session decay rate** — how quickly engagement drops over time  
-    - **Feature adoption velocity** — speed of trying new features  
-    - **Support ticket sentiment trajectory** — sentiment trends over time  
+        - **Session decay rate** — how quickly engagement drops over time  
+        - **Feature adoption velocity** — speed of trying new features  
+        - **Support ticket sentiment trajectory** — sentiment trends over time  
 
-    The result? **91% accuracy. Zero new data points.**
+        The result? **91% accuracy. Zero new data points.**
 
-    ---
+        ---
 
-    ## Domain Expertise > Data Volume
+        ## Domain Expertise > Data Volume
 
-    The best data scientists aren’t the ones with the biggest datasets.  
-    They’re the ones who ask the “dumb” questions and translate intuition into signals.
+        The best data scientists aren’t the ones with the biggest datasets.  
+        They’re the ones who ask the “dumb” questions and translate intuition into signals.
 
-    > *“The goal is to turn data into information, and information into insight.”* — Carly Fiorina
+        > *“The goal is to turn data into information, and information into insight.”* — Carly Fiorina
 
-    ---
+        ---
 
-    ## When You Actually Need More Data
+        ## When You Actually Need More Data
 
-    Sometimes you genuinely do:
+        Sometimes you genuinely do:
 
-    1. Severe class imbalance  
-    2. New market segments  
-    3. Temporal shifts where old data no longer applies  
+        1. Severe class imbalance  
+        2. New market segments  
+        3. Temporal shifts where old data no longer applies  
 
-    These are diagnosable problems — **not defaults**.
+        These are diagnosable problems — **not defaults**.
 
-    ---
+        ---
 
-    ## The Takeaway
+        ## The Takeaway
 
-    Next time your model underperforms:
+        Next time your model underperforms:
 
-    - Audit features with SHAP  
-    - Talk to domain experts  
-    - Check for leakage  
-    - Experiment with architectures  
+        - Audit features with SHAP  
+        - Talk to domain experts  
+        - Check for leakage  
+        - Experiment with architectures  
 
-    **Think differently before you collect differently.**
-    `,
+        **Think differently before you collect differently.**`,
+
     likes: 342,
     comments: 47,
   },
