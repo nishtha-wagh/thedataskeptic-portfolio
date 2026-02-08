@@ -73,13 +73,13 @@ const HeroSection = () => {
   transition={{ duration: 1, delay: 0.3 }}
   className="hidden md:flex justify-center"
 >
-  <div className="relative w-[420px] h-[380px]">
+  <div className="relative">
     {/* Main anchor */}
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
 
     {/* Systems Thinking — top left */}
     <div
-      className="absolute top-[20px] left-[10px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
+      className="absolute top-[40px] left-[10px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
       style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     {/* 4+ Years in Production — center right */}
     <div
-      className="absolute top-1/2 -translate-y-1/2 right-[10px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
+      className="absolute top-1/2 -translate-y-1/2 right-[30px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-[20px] left-[10px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute bottom-[30px] left-[10px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
