@@ -99,8 +99,8 @@ const HeroSection = () => {
 
     {/* 4+ Years in Production — center right */}
     <div
-      className="absolute top-1/2 -translate-y-1/2 right-[150px] px+1 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
-      style={{ animationDelay: "4s" }}
+      className="absolute top-1/2 -translate-y-1/2 right-[150px] px-6 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
+      style={{ animationDelay: "1.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
         4+ Years in Production
