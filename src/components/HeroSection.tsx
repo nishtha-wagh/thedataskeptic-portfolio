@@ -89,7 +89,7 @@ const HeroSection = () => {
 
     {/* Product Experimentation — top right */}
     <div
-      className="absolute top+3 right+1 px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
+      className="absolute bottom-50 right-1 px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
       style={{ animationDelay: "1.4s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
