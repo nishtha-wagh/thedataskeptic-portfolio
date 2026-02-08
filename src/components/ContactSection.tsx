@@ -21,11 +21,10 @@ const ContactSection = () => {
             Let's Connect
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Got a data question <br></br><span className="text-gradient">worth debating</span> ?
+            Got a <br></br><span className="text-gradient">skeptical</span> idea?
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-10 max-w-lg mx-auto">
-            Whether it's a collaboration, data-related, or a real-world ML problem, 
-            I'd love to hear from you.
+            Whether it's a collaboration, a question, or just a chat about data; I'd love to hear from you.
           </p>
         </motion.div>
 
