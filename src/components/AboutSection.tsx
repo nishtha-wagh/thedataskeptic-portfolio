@@ -4,7 +4,7 @@ import { Brain, BarChart3, Cloud, Code2 } from "lucide-react";
 const skills = [
   { icon: Brain, label: "Machine Learning", color: "bg-coral-light text-coral" },
   { icon: Code2, label: "Python & SQL", color: "bg-mint-light text-mint" },
-  { icon: Cloud, label: "AWS & GCP", color: "bg-lavender-light text-lavender" },
+  { icon: Cloud, label: "Amazon Web Services & Google Cloud Platform", color: "bg-lavender-light text-lavender" },
   { icon: BarChart3, label: "Experimentation & A/B Testing", color: "bg-peach-light text-peach" },
 ];
 
