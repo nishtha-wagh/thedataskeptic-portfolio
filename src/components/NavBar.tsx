@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="font-display text-xl font-bold text-gradient">
-          Mis.fit
+          Nishtha Wagh
         </a>
         <div className="hidden md:flex gap-8">
           {navLinks.map((link) => (
