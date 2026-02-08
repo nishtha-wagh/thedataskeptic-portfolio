@@ -24,10 +24,10 @@ const BlogPost = () => {
   return (
     <section className="section-padding">
       <div className="max-w-3xl mx-auto">
-        {/* Back */}
+        {/* Back link */}
         <Link
           to="/posts"
-          className="text-sm text-muted-foreground mb-8 inline-block hover:text-primary transition-colors"
+          className="text-sm text-muted-foreground mb-6 inline-block hover:text-primary transition-colors"
         >
           ← Back to all posts
         </Link>
@@ -36,68 +36,73 @@ const BlogPost = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-6 flex items-center gap-3 text-sm text-muted-foreground"
+          transition={{ duration: 0.4 }}
+          className="mb-6"
         >
-          <span className="px-3 py-1 rounded-full bg-muted font-medium">
-            {post.category}
+          <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+            <span className="px-3 py-1 rounded-full bg-muted font-medium">
+              {post.category}
+            </span>
+            <span>{post.date}</span>
+            <span>·</span>
+            <span>{post.readTime}</span>
           </span>
-          <span>{post.date}</span>
-          <span>·</span>
-          <span>{post.readTime}</span>
         </motion.div>
 
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.05 }}
-          className="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight"
+          transition={{ duration: 0.4, delay: 0.05 }}
+          className="text-4xl md:text-5xl font-display font-bold mb-6"
         >
           {post.title}
         </motion.h1>
 
         {/* Engagement */}
-        <div className="flex items-center gap-6 text-sm text-muted-foreground mb-12">
+        <div className="flex items-center gap-6 text-sm text-muted-foreground mb-10">
           <span>♡ {post.likes} likes</span>
           <span>💬 {post.comments} comments</span>
         </div>
 
-        {/* Content */}
-        <article className="prose prose-neutral prose-lg max-w-none">
+        {/* CONTENT */}
+        <article className="space-y-6 leading-relaxed text-[15.5px] text-foreground">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              h2: ({ node, ...props }) => (
-                <h2
-                  className="mt-12 mb-4 text-2xl font-display font-semibold"
-                  {...props}
-                />
+              h2: ({ children }) => (
+                <h2 className="text-xl font-display font-bold mt-10 mb-4">
+                  {children}
+                </h2>
               ),
-              h3: ({ node, ...props }) => (
-                <h3
-                  className="mt-10 mb-3 text-xl font-display font-semibold"
-                  {...props}
-                />
+              h3: ({ children }) => (
+                <h3 className="text-lg font-display font-semibold mt-8 mb-3">
+                  {children}
+                </h3>
               ),
-              p: ({ node, ...props }) => (
-                <p className="leading-relaxed mb-5" {...props} />
+              p: ({ children }) => (
+                <p className="text-muted-foreground leading-relaxed">
+                  {children}
+                </p>
               ),
-              ul: ({ node, ...props }) => (
-                <ul className="my-6 list-disc pl-6 space-y-2" {...props} />
+              ul: ({ children }) => (
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  {children}
+                </ul>
               ),
-              ol: ({ node, ...props }) => (
-                <ol className="my-6 list-decimal pl-6 space-y-2" {...props} />
+              li: ({ children }) => <li>{children}</li>,
+              strong: ({ children }) => (
+                <strong className="font-semibold text-foreground">
+                  {children}
+                </strong>
               ),
-              blockquote: ({ node, ...props }) => (
-                <blockquote
-                  className="border-l-4 border-muted pl-4 italic text-muted-foreground my-8"
-                  {...props}
-                />
+              blockquote: ({ children }) => (
+                <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground my-6">
+                  {children}
+                </blockquote>
               ),
-              hr: () => <hr className="my-10 border-muted" />,
-              strong: ({ node, ...props }) => (
-                <strong className="font-semibold text-foreground" {...props} />
+              hr: () => (
+                <hr className="my-10 border-t border-border" />
               ),
             }}
           >
