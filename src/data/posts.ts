@@ -20,40 +20,60 @@ export const posts: BlogPost[] = [
     excerpt:
       "Everyone’s obsessed with bigger datasets. But in production, real gains often come from better features, constraints, and problem framing.",
     content: `
-## The Data Hoarding Problem
+    ## The Data Hoarding Problem
 
-We’ve all been there. Your model’s accuracy plateaus at 87%, and the first instinct is always the same: *“We need more data.”*
+    We've all been there. Your model’s accuracy plateaus at 87%, and the first instinct is always the same: *"We need more data."*
 
-But here’s the uncomfortable truth — **more data is rarely the answer**. In my experience, teams waste months collecting and labeling data when the real issue is hiding in plain sight.
+    But here's the uncomfortable truth — **more data is rarely the answer**.
 
-## The Feature Engineering Goldmine
+    ---
 
-Let me share a real example. We had a churn model stuck at 82% accuracy with 500K records. Instead of scraping another million users, we engineered better features:
+    ## The Feature Engineering Goldmine
 
-- Session decay rate — how quickly engagement drops
-- Feature adoption velocity — speed of trying new features
-- Support ticket sentiment trajectory — sentiment trends over time
+    Let me share a real example.
 
-The result? **91% accuracy. Zero new data points.**
+    We had a churn model stuck at **82% accuracy** with 500K records. Instead of scraping more users, we engineered better features:
 
-## Domain Expertise > Data Volume
+    - **Session decay rate** — how quickly engagement drops over time  
+    - **Feature adoption velocity** — speed of trying new features  
+    - **Support ticket sentiment trajectory** — sentiment trends over time  
 
-The best data scientists aren’t the ones with the biggest datasets. They’re the ones who ask the “dumb” questions and translate domain intuition into mathematical signals.
+    The result? **91% accuracy. Zero new data points.**
 
-## When You Actually Need More Data
+    ---
 
-Sometimes you genuinely do:
-1. Severe class imbalance
-2. New market segments
-3. Temporal shifts where old data no longer applies
+    ## Domain Expertise > Data Volume
 
-But these are diagnosable problems — not defaults.
+    The best data scientists aren’t the ones with the biggest datasets.  
+    They’re the ones who ask the “dumb” questions and translate intuition into signals.
 
-## The Takeaway
+    > *“The goal is to turn data into information, and information into insight.”* — Carly Fiorina
 
-Audit your features. Talk to domain experts. Check for leakage.  
-**Think differently before you collect differently.**
-`,
+    ---
+
+    ## When You Actually Need More Data
+
+    Sometimes you genuinely do:
+
+    1. Severe class imbalance  
+    2. New market segments  
+    3. Temporal shifts where old data no longer applies  
+
+    These are diagnosable problems — **not defaults**.
+
+    ---
+
+    ## The Takeaway
+
+    Next time your model underperforms:
+
+    - Audit features with SHAP  
+    - Talk to domain experts  
+    - Check for leakage  
+    - Experiment with architectures  
+
+    **Think differently before you collect differently.**
+    `,
     likes: 342,
     comments: 47,
   },

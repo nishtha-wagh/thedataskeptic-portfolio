@@ -66,7 +66,7 @@ const BlogPost = () => {
         </div>
 
         {/* Content */}
-        <article className="prose prose-neutral max-w-none">
+        <article className="prose prose-lg prose-neutral max-w-none leading-relaxed">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
         </ReactMarkdown>
