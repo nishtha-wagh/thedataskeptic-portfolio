@@ -79,7 +79,7 @@ const HeroSection = () => {
 
     {/* Systems Thinking — top left */}
     <div
-      className="absolute top-0 left-[-15px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
+      className="absolute top-[20px] left-[20px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
       style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -89,7 +89,7 @@ const HeroSection = () => {
 
     {/* Product Experimentation — top right */}
     <div
-      className="absolute top-[40px] right-[-15px] px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
+      className="absolute top-[20px] right-[20px] px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
       style={{ animationDelay: "1.4s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     {/* 4+ Years in Production — center right */}
     <div
-      className="absolute top-[calc(50%-12px)] -translate-y-1/2 right-[-8px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
+      className="absolute top-1/2 -translate-y-1/2 right-[10px] px-4 py-2.5 rounded-2xl bg-coral-light border border-border animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
@@ -109,7 +109,7 @@ const HeroSection = () => {
 
     {/* LLM · Credit Risk — bottom right */}
     <div
-      className="absolute bottom-[8px] right-[-4px] px-4 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
+      className="absolute bottom-[20px] right-[20px] px-4 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
       style={{ animationDelay: "2.6s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-[40px] left-[-10px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute bottom-[20px] left-[20px] px-4 py-2.5 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
