@@ -54,7 +54,7 @@ const PostsSection = () => {
                   {post.excerpt}
                 </p>
 
-                <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                {/* <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1">
                     <Heart size={14} className="text-coral" />
                     {post.likes}
@@ -66,7 +66,7 @@ const PostsSection = () => {
                   <span className="ml-auto flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity text-primary font-display font-medium">
                     Read <ArrowRight size={12} />
                   </span>
-                </div>
+                </div> */}
               </Link>
             </motion.article>
           ))}

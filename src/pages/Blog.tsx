@@ -60,16 +60,6 @@ const Blog = () => {
                   </p>
 
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span className="flex items-center gap-1">
-                        <Heart size={14} className="text-coral" />
-                        {post.likes}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <MessageCircle size={14} />
-                        {post.comments}
-                      </span>
-                    </div>
                     <span className="flex items-center gap-1 text-sm font-display font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                       Read more <ArrowRight size={14} />
                     </span>
