@@ -79,7 +79,7 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
           i++;
         }
         elements.push(
-          <ol key={key++} className="list-decimal list-inside space-y-2 my-4 font-body text-foreground">
+          <ol key={key++} className="list-decimal list-inside space-y-2 my-4 font-body text-foreground text-base md:text-lg leading-relaxed">
             {items.map((item, idx) => (
               <li key={idx} className="leading-relaxed">{renderInline(item)}</li>
             ))}
@@ -96,7 +96,7 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
           i++;
         }
         elements.push(
-          <ul key={key++} className="list-disc list-inside space-y-2 my-4 font-body text-foreground">
+          <ul key={key++} className="list-disc list-inside space-y-2 my-4 font-body text-foreground text-base md:text-lg leading-relaxed">
             {items.map((item, idx) => (
               <li key={idx} className="leading-relaxed">{renderInline(item)}</li>
             ))}
