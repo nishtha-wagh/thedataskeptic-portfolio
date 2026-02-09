@@ -27,7 +27,7 @@ export const posts: BlogPost[] = [
 
             We've all been there. Your model's accuracy plateaus at 87%, and the first instinct is always the same: *"We need more data."*
 
-            But here's the uncomfortable truth — **more data is rarely the answer**. In fact, in my 3+ years as a data scientist, I've seen teams waste months collecting and labeling data when the real issue was hiding in plain sight.
+            But here's the uncomfortable truth: **more data is rarely the answer**. In fact, in my 3+ years as a data scientist, I've seen teams waste months collecting and labeling data when the real issue was hiding in plain sight.
 
             ### The Feature Engineering Goldmine
 
@@ -47,13 +47,13 @@ export const posts: BlogPost[] = [
 
             ### When You Actually Need More Data
 
-            Don't get me wrong — sometimes you genuinely need more data:
+            Don't get me wrong, sometimes you genuinely need more data:
 
             1. **Class imbalance** that can't be solved with SMOTE or other techniques
             2. **New market segments** not represented in your training set
             3. **Temporal shifts** where historical data no longer reflects current patterns
 
-            But these are specific, diagnosable problems — not a default reaction to underperformance.
+            But these are specific diagnosable problems and not a default reaction to underperformance.
 
             ### The Takeaway
 
@@ -95,7 +95,7 @@ export const posts: BlogPost[] = [
 
             ### Asking "Stupid" Questions
 
-            The most powerful tool in a data scientist's arsenal isn't Python or TensorFlow — it's the courage to ask questions that might sound naive:
+            The most powerful tool in a data scientist's arsenal isn't Python or TensorFlow, it's the courage to ask questions that might sound naive:
 
             - *"Why are we predicting this specific metric?"*
             - *"What would a domain expert do without any data?"*
