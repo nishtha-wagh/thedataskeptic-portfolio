@@ -7,6 +7,7 @@ const resumes = [
     id: "traditional-ds",
     label: "Traditional DS",
     title: "Traditional Data Scientist",
+    pdf: "/resumes/traditional-ds.pdf",
     description: "Classic data science role focusing on statistical analysis, hypothesis testing, A/B experiments, and data-driven decision making.",
     highlights: [
       "Statistical modeling & hypothesis testing",
@@ -20,6 +21,7 @@ const resumes = [
     id: "product-ds",
     label: "Product DS",
     title: "Product Data Scientist",
+    pdf: "/resumes/product-ds.pdf",
     description: "Product-focused data science emphasizing user behavior analytics, growth metrics, and product experimentation.",
     highlights: [
       "Product analytics & funnel optimization",
@@ -33,6 +35,7 @@ const resumes = [
     id: "ml-engineer",
     label: "ML Engineer",
     title: "Machine Learning Engineer",
+    pdf: "/resumes/ml-engineer.pdf",
     description: "Engineering-heavy role focused on building, deploying, and scaling ML systems in production environments.",
     highlights: [
       "End-to-end ML pipeline development",
@@ -46,6 +49,7 @@ const resumes = [
     id: "credit-risk-ds",
     label: "Credit Risk DS",
     title: "Credit Risk Data Scientist",
+    pdf: "/resumes/credit-risk-ds.pdf",
     description: "Domain-specialized role in financial risk modeling, credit scoring, and regulatory compliance analytics.",
     highlights: [
       "Credit scoring & PD/LGD/EAD models",
@@ -113,10 +117,28 @@ const ResumeSection = () => {
                         {r.description}
                       </p>
                     </div>
-                    <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-display text-sm font-medium hover:opacity-90 transition-opacity shrink-0">
-                      <Download className="w-4 h-4" />
-                      Download PDF
-                    </button>
+                    <div className="flex flex-wrap gap-3 shrink-0">
+                    {/* View in new tab */}
+                    <a
+                        href={r.pdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-background font-display text-sm font-medium hover:bg-muted transition-colors"
+                    >
+                        <FileText className="w-4 h-4" />
+                        View
+                    </a>
+
+                    {/* Download */}
+                    <a
+                        href={r.pdf}
+                        download
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-display text-sm font-medium hover:opacity-90 transition-opacity"
+                    >
+                        <Download className="w-4 h-4" />
+                        Download
+                    </a>
+                    </div>
                   </div>
 
                   <div>
