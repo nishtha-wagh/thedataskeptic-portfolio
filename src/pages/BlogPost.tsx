@@ -46,6 +46,10 @@ const BlogPost = () => {
             <h1 className="text-3xl md:text-5xl font-display font-bold mb-6 leading-tight">
               {post.title}
             </h1>
+
+            <div className="flex items-center gap-4 text-sm text-muted-foreground pb-8 mb-8 border-b border-border">
+              
+            </div>
           </motion.div>
 
           <motion.div
